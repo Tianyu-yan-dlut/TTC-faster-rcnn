@@ -6,7 +6,7 @@ This is a project for a new **feature extractor**, TTC block!
 
 The is a brave try to challenge [the tranditional fully convolution](https://arxiv.org/abs/1409.1556) extractor structure!
 
-The structure of TTC block is showed in the bellow.
+The structure of TTC block is shown in below.
 
 ![img](img/1.jpg)
 
