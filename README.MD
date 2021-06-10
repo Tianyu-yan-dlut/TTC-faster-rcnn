@@ -2,23 +2,11 @@
 
 ## 1. Introduction
 
-**[Update:]** I've further simplified the code to pytorch 1.5, torchvision 0.6, and replace the customized ops roipool and nms with the one from torchvision.  if you want the old version code, please checkout branch [v1.0](https://github.com/chenyuntc/simple-faster-rcnn-pytorch/tree/v1.0)
+This is a project for a new **feature extractor**, TTC block!
 
+The is a brave try to challenge [the tranditional fully convolution](https://arxiv.org/abs/1409.1556) extractor structure!
 
-
-This project is a **Simplified** Faster R-CNN implementation based on [chainercv](https://github.com/chainer/chainercv) and other [projects](#acknowledgement) . I hope it can serve as an start code for those who want to know the detail of Faster R-CNN.  It aims to:
-
-- Simplify the code (*Simple is better than complex*)
-- Make the code more straightforward (*Flat is better than nested*)
-- Match the performance reported in [origin paper](https://arxiv.org/abs/1506.01497) (*Speed Counts and mAP Matters*)
-
-And it has the following features:
-- It can be run as pure Python code, no more build affair. 
-- It's a minimal implemention in around 2000 lines valid code with a lot of comment and instruction.(thanks to chainercv's excellent documentation)
-- It achieves higher mAP than the origin implementation (0.712 VS 0.699)
-- It achieve speed compariable with other implementation (6fps and 14fps for train and test in TITAN XP)
-- It's memory-efficient (about 3GB for vgg16)
-
+The structure of TTC block is showed in the bellow.
 
 ![img](img/1.jpg)
 
@@ -38,18 +26,13 @@ VGG16 train on `trainval` and test on `test` split.
 |    train with caffe pretrained model     | 0.700-0.712 |
 | train with torchvision pretrained model  | 0.685-0.701 |
 | model converted from [chainercv](https://github.com/chainer/chainercv/tree/master/examples/faster_rcnn) (reported 0.706) |   0.7053    |
+| TTC block| 0.713-0.719|
 
 ### 2.2 Speed
 
-|              Implementation              |   GPU    | Inference | Trainining |
-| :--------------------------------------: | :------: | :-------: | :--------: |
-| [origin paper](https://arxiv.org/abs/1506.01497) |   K40    |   5 fps   |     NA     |
-|                 This[1]                  | TITAN Xp | 14-15 fps |   6 fps    |
-| [pytorch-faster-rcnn](https://github.com/ruotianluo/pytorch-faster-rcnn) | TITAN Xp | 15-17fps  |    6fps    |
+The large amounts of parameter lead to low speed, please prepare your patience and a good **[GPU](https://www.workstationspecialist.com/product/nvidia-tesla-a100/)**
 
-[1]: make sure you install cupy correctly and only one program run on the GPU. The training speed is sensitive to your gpu status. see [troubleshooting](troubleshooting) for more info. Morever it's slow in the start of the program -- it need time to warm up.
 
-It could be faster by removing visualization, logging, averaging loss etc.
 ## 3. Install dependencies
 
 
