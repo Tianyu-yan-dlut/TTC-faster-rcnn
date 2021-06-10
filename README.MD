@@ -144,7 +144,7 @@ Some Key arguments:
 
 you may open browser, visit `http://<ip>:8097` and see the visualization of training procedure as below:
 
-![visdom](imgs/visdom-fasterrcnn.png)
+![visdom](img/2.png)
 
 ## Troubleshooting
 
