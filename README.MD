@@ -30,7 +30,7 @@ VGG16 train on `trainval` and test on `test` split.
 
 ### 2.2 Speed
 
-The large amounts of parameter lead to low speed, please prepare your patience and a good **[GPU](https://www.workstationspecialist.com/product/nvidia-tesla-a100/)**!
+The large amounts of parameter lead to low speed, please prepare great patience and a good **[GPU](https://www.workstationspecialist.com/product/nvidia-tesla-a100/)**!
 
 
 ## 3. Install dependencies
