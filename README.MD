@@ -30,7 +30,7 @@ VGG16 train on `trainval` and test on `test` split.
 
 ### 2.2 Speed
 
-The large amounts of parameter lead to low speed, please prepare your patience and a good **[GPU](https://www.workstationspecialist.com/product/nvidia-tesla-a100/)**
+The large amounts of parameter lead to low speed, please prepare your patience and a good **[GPU](https://www.workstationspecialist.com/product/nvidia-tesla-a100/)**!
 
 
 ## 3. Install dependencies
@@ -69,10 +69,7 @@ nohup python -m visdom.server &
 
 ## 4. Demo
 
-Download pretrained model from [Google Drive](https://drive.google.com/open?id=1cQ27LIn-Rig4-Uayzy_gH5-cW-NRGVzY) or [Baidu Netdisk( passwd: scxn)](https://pan.baidu.com/s/1o87RuXW)
-
-
-See [demo.ipynb](https://github.com/chenyuntc/simple-faster-rcnn-pytorch/blob/master/demo.ipynb) for more detail.
+Pretrained model is availale, please send a email to **2981431354@mial.dlut.edu.cn** to ask for! 
 
 ## 5. Train
 
@@ -169,14 +166,4 @@ This work builds on many excellent works, which include:
 - [faster-rcnn.pytorch by Jianwei Yang and Jiasen Lu](https://github.com/jwyang/faster-rcnn.pytorch).It mainly refer to [longcw's faster_rcnn_pytorch](https://github.com/longcw/faster_rcnn_pytorch)
 - All the above Repositories have referred to [py-faster-rcnn by Ross Girshick and Sean Bell](https://github.com/rbgirshick/py-faster-rcnn)  either directly or indirectly. 
 
-## ^_^
-Licensed under MIT, see the LICENSE for more detail.
 
-Contribution Welcome.
-
-If you encounter any problem, feel free to open an issue, but too busy lately.
-
-Correct me if anything is wrong or unclear.
-
-model structure
-![img](imgs/model_all.png)
