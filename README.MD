@@ -1,4 +1,4 @@
-# A Simple and Fast Implementation of Faster R-CNN
+# The TTC block-Faster R-CNN Implementation
 
 ## 1. Introduction
 
