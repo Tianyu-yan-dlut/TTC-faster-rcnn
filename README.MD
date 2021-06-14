@@ -16,7 +16,7 @@ The structure of TTC block is shown in below.
 
 ### 2.1 mAP
 
-VGG16 train on `trainval` and test on `test` split. 
+VGG16 train on `trainval VOC` and test on `test VOC` split. 
 
 **Note**: the training shows great randomness, you may need a bit of luck and more epoches of training to reach the highest mAP. However, it should be easy to surpass the lower bound. 
 
@@ -26,7 +26,10 @@ VGG16 train on `trainval` and test on `test` split.
 |    train with caffe pretrained model     | 0.700-0.712 |
 | train with torchvision pretrained model  | 0.685-0.701 |
 | model converted from [chainercv](https://github.com/chainer/chainercv/tree/master/examples/faster_rcnn) (reported 0.706) |   0.7053    |
-| TTC block| 0.713-0.719|
+| TTC-A block| 66.7 |
+| TTC-B block| 67.0 | 
+| TTC-C block| 67.7 | 
+| TTC-S block| 71.1 | 
 
 ### 2.2 Speed
 
